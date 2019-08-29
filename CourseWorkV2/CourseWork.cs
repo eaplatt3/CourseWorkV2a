@@ -15,6 +15,9 @@ namespace CourseWorkV2
             //Variables
             string num;
             int i;
+            
+
+            Assignment a = new Assignment();
 
             #region Do while Loop
             //Loop to loop menu
@@ -29,6 +32,9 @@ namespace CourseWorkV2
                 num = Console.ReadLine();
                 Console.WriteLine("");
 
+                
+
+               
                 //Parse string to int 
                 if (!Int32.TryParse(num, out i))
                 {
@@ -40,7 +46,8 @@ namespace CourseWorkV2
                 {
                     CourseWorkUnitTesting test = new CourseWorkUnitTesting();
 
-                    test.Name =
+                    a.toString();
+
 
                     Console.WriteLine("**********************");
                     Console.WriteLine("Unit Testing: Category");
