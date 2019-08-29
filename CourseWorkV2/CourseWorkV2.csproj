@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CourseWorkLibraryV2">
-      <HintPath>..\..\CourseWorkLibraryV2\CourseWorkLibraryV2\bin\Debug\CourseWorkLibraryV2.dll</HintPath>
+      <HintPath>..\..\eaplatt3\CourseWorkLibraryV2\CourseWorkLibraryV2\bin\Debug\CourseWorkLibraryV2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

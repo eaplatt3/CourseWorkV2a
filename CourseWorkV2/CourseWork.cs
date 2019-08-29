@@ -15,6 +15,7 @@ namespace CourseWorkV2
             //Variables
             string num;
             int i;
+            bool FuncCall = false;
             
 
             Assignment a = new Assignment();
@@ -46,13 +47,13 @@ namespace CourseWorkV2
                 {
                     CourseWorkUnitTesting test = new CourseWorkUnitTesting();
 
-                    a.toString();
+                    test.UnitTestCategory();
 
 
                     Console.WriteLine("**********************");
                     Console.WriteLine("Unit Testing: Category");
                     Console.WriteLine("**********************");
-                    Console.WriteLine("Category Name Property: ");
+                    Console.WriteLine("Category Name Property: " + test);
                     Console.WriteLine("Category Percentage Property: ");
                     Console.WriteLine("");
                 }
