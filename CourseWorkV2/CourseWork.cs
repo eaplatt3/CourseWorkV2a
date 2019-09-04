@@ -49,13 +49,11 @@ namespace CourseWorkV2
 
                     //TO DO Make Method Work!!!!
 
-                    test.UnitTestCategory();
-
-
                     Console.WriteLine("**********************");
                     Console.WriteLine("Unit Testing: Category");
                     Console.WriteLine("**********************");
-                    Console.WriteLine("Category Name Property: " + test);
+                    Console.Write("Category Name Property: ");
+                    test.UnitTestCategory();
                     Console.WriteLine("Category Percentage Property: ");
                     Console.WriteLine("");
                 }
