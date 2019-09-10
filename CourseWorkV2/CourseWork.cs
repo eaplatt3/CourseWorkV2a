@@ -5,6 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using CourseWorkLibraryV2;
 
+/////////////////////////////////////////////////////////////////////////
+// File: CourseWork.cs                                                 //
+//                                                                     //
+// Purpose: Contains the Menu and calls to the Unit Testing            //
+//                                                                     //
+// Written By: Earl Platt III                                          //
+//                                                                     //
+// Compiler: Visual Studio 2019                                        //
+//                                                                     //
+/////////////////////////////////////////////////////////////////////////
+
 namespace CourseWorkV2
 {
     class CourseWork
@@ -14,12 +25,8 @@ namespace CourseWorkV2
 
             //Variables
             string num;
-            int i;
-            bool FuncCall = false;
+            int i;    
             
-
-            Assignment a = new Assignment();
-
             #region Do while Loop
             //Loop to loop menu
             do
@@ -32,10 +39,7 @@ namespace CourseWorkV2
                 Console.Write("Enter Choice: ");
                 num = Console.ReadLine();
                 Console.WriteLine("");
-
-                
-
-               
+                          
                 //Parse string to int 
                 if (!Int32.TryParse(num, out i))
                 {
@@ -46,27 +50,23 @@ namespace CourseWorkV2
                 if (i == 1)
                 {
                     CourseWorkUnitTesting test = new CourseWorkUnitTesting();
-
-                    //TO DO Make Method Work!!!!
-
+                    
                     Console.WriteLine("**********************");
                     Console.WriteLine("Unit Testing: Category");
                     Console.WriteLine("**********************");
-                    Console.Write("Category Name Property: ");
                     test.UnitTestCategory();
-                    Console.WriteLine("Category Percentage Property: ");
                     Console.WriteLine("");
                 }
 
                 //Checks if user inputed 2
                 if (i == 2)
                 {
+                    CourseWorkUnitTesting test = new CourseWorkUnitTesting();
+
                     Console.WriteLine("**********************");
                     Console.WriteLine("Unit Testing: Assigment");
                     Console.WriteLine("**********************");
-                    Console.WriteLine("Assigment Name Property: ");
-                    Console.WriteLine("Assigment Description Property: ");
-                    Console.WriteLine("Assigment CategoryName Property: ");
+                    test.UnitTestAssignment();
                     Console.WriteLine("");
                 }
 
